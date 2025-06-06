@@ -29,7 +29,7 @@ def check_offensiveness(text: str):
     """
     Raises HTTPException if the text is offensive.
     """
-    if is_offensive(text):
+    if is_offensive(text): # This calls the is_offensive function
         raise HTTPException(
             status_code=400,
             detail="Offensive language detected. Please rephrase your message."
